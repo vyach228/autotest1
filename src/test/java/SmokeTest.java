@@ -24,10 +24,11 @@ public class SmokeTest {
 
         String headerText = mainPage
                 .clickInButtonField()
+                .clickInButtonField2()
                 .getHeaderText();
         String assertionError = null;
         try {
-            Assert.assertEquals(headerText,"Заглавная");
+            Assert.assertEquals(headerText,"Обсуждение");
         }
         catch (AssertionError ae) {
             assertionError = ae.toString();
